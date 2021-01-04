@@ -1,0 +1,25 @@
+1)You know something about docker, put necessary files here
+
+.
+https://harm-smits.github.io/42docs/projects/ft_server
+.
+docker pull centos #pull image from docker hub
+docker run -d -t --name cancontainmyself centos # last word is image which we use
+docker ps #running docker containers
+docker exec -it cancontainmyself bash # go to terminal of virtual_machine/container 
+docker stop cantcontainmyself
+docker start # brings back but how?????
+
+docker stats # mem and cpu consumption
+.
+
+2)
+https://phoenixnap.com/kb/docker-image-vs-container
+https://stackify.com/docker-image-vs-container-everything-you-need-to-know/
+
+3)about docker flags
+https://dker.ru/docs/docker-engine/engine-reference/command-line-reference/run/
+
+!)windows based containers on windows
+linux based containers on linux/linux_kernel
+and no other way
