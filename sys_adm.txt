@@ -1,0 +1,3 @@
+How to check how many users in current linux system?
+
+What kind of users create docker when initing container, and what rigths do they have?
