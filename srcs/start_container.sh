@@ -1,3 +1,6 @@
+service mysql start
+
+
 echo "hello world"
 
 while true;

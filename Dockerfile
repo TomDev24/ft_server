@@ -8,5 +8,7 @@ RUN apt-get update && apt-get install -y vim \
 	&& apt-get install -y mariadb-server
 
 COPY ./srcs/start_container.sh ./
+COPY ./srcs/index.html /var/www/html/
+EXPOSE 80
 
-CMD bash start_container.sh
+CMD ["nginx", "-g", "daemon off;"]

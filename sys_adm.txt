@@ -1,3 +1,53 @@
 How to check how many users in current linux system?
 
 What kind of users create docker when initing container, and what rigths do they have?
+
+
+--/var/www - default place for web-server
+https://unix.stackexchange.com/questions/47436/why-is-the-root-directory-on-a-web-server-put-by-default-in-var-www
+
+so which user should be logged in, and work with all that (folder, files), and why its important?
+-> here is the great answer:
+https://askubuntu.com/questions/873839/what-is-the-www-data-user
+
+1)О владельцах и группах в linux и chown
+https://www.hostinger.ru/rukovodstva/komanda-chown-linux/
+
+--Подробнее о группах
+https://losst.ru/gruppy-polzovatelej-linux
+
+2)
+tom@tom-Aspire-E5-575G:~/development/ft_server$ sudo chmod ug-x file
+
+3)Захотел создать простенький static nginx website
+--https://en.wikipedia.org/wiki/Port_(computer_networking) // read russian version
+--https://en.wikipedia.org/wiki/OSI_model // also read in ru
+--https://en.wikipedia.org/wiki/Internet_protocol_suite // also read in ru
+--https://en.wikipedia.org/wiki/Transmission_Control_Protocol // ru
+
+!!!!!!!
+https://medium.com/code-to-express/https-medium-com-kumarnitish-hosting-static-site-using-nginx-web-server-in-docker-container-167b31df70bb
+--about dockerfile EXPOSE
+https://docs.docker.com/engine/reference/builder/
+
+on my ubuntu nginx wal always running, i only could stop it with 
+sudo nginx -s stop
+
+sudo service nginx start
+//actually starts the server, and it can be seen as active in service status
+//That means that nginx itsetlf and nginx server can work kinda separate
+
+4)
+nginx -g 'daemon off;'
+//runs nginx if foreground mode
+https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-container-without-halting
+//CHECK about dockerfile CMD !!!!!!! It clarifyies a lot of thing
+https://docs.docker.com/engine/reference/builder/
+
+//////////////////////////////////AND FINALLY, YOU CAN FOLLOW ALONG THIS TUTORIAL
+https://medium.com/code-to-express/https-medium-com-kumarnitish-hosting-static-site-using-nginx-web-server-in-docker-container-167b31df70bb
+//////////////////////////////////But i am sure, its not best practice
+//////important notice on port mapping, after i exposed port 80 (default TCP) i need publish it
+sudo docker -d -p 80:80 --name comon first
+
+
