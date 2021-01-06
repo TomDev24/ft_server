@@ -7,3 +7,18 @@
 -)select user from mysql.user;
 2)sudo apt install php7.2-cli php7.2-fpm php7.2-mysql php7.2-json php7.2-opcache php7.2-mbstring php7.2-xml php7.2-gd php7.2-curl
 
+3)SQL commands
+mysql --user='root' --execute="CREATE DATABASE wp;"
+mysql --user='root' --execute="CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'wp_user'"
+mysql --user='root' --execute="GRANT ALL ON wp.* TO 'wp_user'@'localhost' IDENTIFIED BY 'wp_user'"
+mysql --user='root' --execute="FLUSH PRIVILEGES
+
+4)WordPress 
+mkdir -p /var/www/html/site.com
+cd /tmp
+wget https://wordpress.org/latest.tar.gz
+tar xf latest.tar.gz
+mv /tmp/wordpress/* /var/www/html/site.com/
+
+5)Permissions 
+chown -R www-data: /var/www/html/site.com
