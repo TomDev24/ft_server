@@ -7,8 +7,9 @@ RUN apt-get update && apt-get install -y vim \
 	php7.3-mbstring php7.3-xml php7.3-gd php7.3-curl \
 	&& apt-get install -y mariadb-server
 
-COPY ./srcs/start_container.sh ./
+COPY ./srcs/start_container.sh ./tmp
+COPY ./srcs/site_nginx.conf ./tmp
 COPY ./srcs/index.html /var/www/html/
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD bash ./tmp/start_container.sh

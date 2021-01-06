@@ -59,3 +59,10 @@ sudo doocker logs [container-name]
 !!!!!HERE is ANSWER https://stackoverflow.com/questions/28212380/why-docker-container-exits-immediately
 
 docker rmi <your-image-id> // to delete images
+
+
+5)Now configuring the nginx
+
+
+6)how to use openssl
+https://www.digicert.com/kb/ssl-support/openssl-quick-reference-guide.htm

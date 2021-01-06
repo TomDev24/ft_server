@@ -1,0 +1,9 @@
+--setting up mysql, wordpress nginx and phpmyadmi on localhost;
+
+1)https://www.hostinger.com/tutorials/how-to-install-wordpress-with-nginx-on-ubuntu/
+-)https://www.inmotionhosting.com/support/website/create-a-mysql-database-using-command-line/
+-)sudo mysql -u root -p -> SHOW DATABASES;
+-)https://qna.habr.com/q/533466
+-)select user from mysql.user;
+2)sudo apt install php7.2-cli php7.2-fpm php7.2-mysql php7.2-json php7.2-opcache php7.2-mbstring php7.2-xml php7.2-gd php7.2-curl
+
