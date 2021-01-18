@@ -10,7 +10,11 @@ RUN apt-get update && apt-get install -y vim \
 
 COPY ./srcs/start_container.sh .
 COPY ./srcs/site_nginx.conf ./tmp
-COPY ./srcs/index.html /var/www/html/
+COPY ./srcs/wp-config.php ./tmp
+COPY ./srcs/phpmyadmin.inc.php ./tmp
+COPY ./srcs/index.html /var/www/site.com/
+
 EXPOSE 80
+EXPOSE 443
 
 CMD bash start_container.sh

@@ -67,4 +67,11 @@ docker rmi <your-image-id> // to delete images
 6)how to use openssl
 https://www.digicert.com/kb/ssl-support/openssl-quick-reference-guide.htm
 
+7)What is php fpm?
+//Fast CGI
+https://ru.wikipedia.org/wiki/FastCGI
+//Php fpm
+https://www.php.net/manual/ru/install.fpm.php
 
+8)Clean instruction of nginx configuration
+https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940
