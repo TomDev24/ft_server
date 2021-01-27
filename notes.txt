@@ -75,3 +75,11 @@ https://www.php.net/manual/ru/install.fpm.php
 
 8)Clean instruction of nginx configuration
 https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940
+
+
+
+////////////////////Docker on mac !!!!!
+1)https://stackoverflow.com/questions/44084846/cannot-connect-to-the-docker-daemon-on-macos#:~:text=On%20macOS%20the%20docker%20binary,VM%20and%20attach%20to%20it.
+----In school we have only 5gb memory, we need to use goinfree, for necessary mem
+//https://github.com/nsr888/dotfiles/blob/master/clean.sh
+ln -s goinfree/.docker /Users/dbrittan/.docker
